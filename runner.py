@@ -1,5 +1,6 @@
 import subprocess
 import os
+import sys
 from queue_manager import QueueManager
 
 
@@ -64,7 +65,8 @@ def run_job(job, queue_manager, on_status_change=None, on_log=None):
             stderr=subprocess.STDOUT,
             text=True,
             encoding="utf-8",
-            errors="replace"
+            errors="replace",
+            creationflags=subprocess.CREATE_NO_WINDOW  # impede que suba uma janela de CMD
         )
 
         for line in process.stdout:

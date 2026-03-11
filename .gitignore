@@ -1,0 +1,7 @@
+jobs.json
+done.json
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
