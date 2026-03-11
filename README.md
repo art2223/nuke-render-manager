@@ -26,6 +26,6 @@ You can also move it up or down in the queue.
 # Requirements
 
 - You need to set NUKE_EXE environment variable. (ex: NUKE_EXE = Nuke16.0.exe     |    This was my case)
-- You may also need to add your Nuke folder in Path env variable. (ex: Path = ...;...;C:\ProgramFiles\Nuke16.0v2;...;    | Usually holds manny values.)
+- You may also need to add your Nuke folder in Path env variable. (ex: Path = ...;...;C:\ProgramFiles\Nuke16.0v2;...;    | Usually holds many values.)
 - Available Nuke license.
    - You CAN use a Nuke render license, BUT you must omit the "-i" in the command building function. This is the first def from 'runner.py'. Otherwise it will use your interactive available license (the one you use to work, no problems with that whatsoever so far).
